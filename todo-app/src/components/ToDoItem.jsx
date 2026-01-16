@@ -12,10 +12,12 @@ function ToDoItem({ todo, deleteTodo, toggleTodo, editTodo }) {
             value={newText}
             onChange={(e) => setNewText(e.target.value)}
           />
-          <button onClick={() => {
-            editTodo(todo.id, newText);
-            setIsEditing(false);
-          }}>
+          <button
+            onClick={() => {
+              editTodo(todo.id, newText);
+              setIsEditing(false);
+            }}
+          >
             Save
           </button>
         </>

@@ -1,7 +1,12 @@
 .app {
   width: 300px;
   margin: auto;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 5px;
 }
 
 button {
@@ -12,3 +17,4 @@ li {
   list-style: none;
   margin: 8px 0;
 }
+

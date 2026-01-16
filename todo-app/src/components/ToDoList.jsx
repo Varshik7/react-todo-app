@@ -3,7 +3,7 @@ import ToDoItem from "./ToDoItem";
 function ToDoList({ todos, deleteTodo, toggleTodo, editTodo }) {
   return (
     <ul>
-      {todos.map(todo => (
+      {todos.map((todo) => (
         <ToDoItem
           key={todo.id}
           todo={todo}
@@ -17,3 +17,4 @@ function ToDoList({ todos, deleteTodo, toggleTodo, editTodo }) {
 }
 
 export default ToDoList;
+

@@ -41,6 +41,7 @@ function App() {
   return (
     <div className="app">
       <Header />
+
       <input
         value={text}
         onChange={(e) => setText(e.target.value)}
