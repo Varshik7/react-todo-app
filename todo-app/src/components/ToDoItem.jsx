@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+// delete and mark completed
+
 function ToDoItem({ todo, deleteTodo, toggleTodo, editTodo }) {
   const [isEditing, setIsEditing] = useState(false);
   const [newText, setNewText] = useState(todo.text);
@@ -32,6 +34,7 @@ function ToDoItem({ todo, deleteTodo, toggleTodo, editTodo }) {
           >
             {todo.text}
           </span>
+
           <button onClick={() => setIsEditing(true)}>Edit</button>
           <button onClick={() => deleteTodo(todo.id)}>Delete</button>
         </>
