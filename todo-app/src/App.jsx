@@ -7,14 +7,17 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [text, setText] = useState("");
 
-  const addTodo = () => {
-    if (text.trim() === "") return;
-    setTodos([
-      ...todos,
-      { id: Date.now(), text, completed: false }
-    ]);
-    setText("");
-  };
+  // add todo functionality 
+
+const addTodo = () => {
+  if (text.trim() === "") return;
+  setTodos([
+    ...todos,
+    { id: Date.now(), text, completed: false }
+  ]);
+  setText("");
+};
+
 
   const deleteTodo = (id) => {
     setTodos(todos.filter(todo => todo.id !== id));
@@ -47,7 +50,7 @@ function App() {
         onChange={(e) => setText(e.target.value)}
         placeholder="Add a task"
       />
-      <button onClick={addTodo}>Add</button>
+      <button onClick={addTodo}>Add</button>  
 
       <ToDoList
         todos={todos}
